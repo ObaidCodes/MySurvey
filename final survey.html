@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title>Training Survey</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Training Survey</h1>
+  <p id="description">Your response inspires us more to Improve.Thank you!</p>
+<form id="survey-form" method="POST" action="#">
+  <fieldset>
+    <h3>Personal Details</h3>
+    <label id="name-label">Full Name<input type="text" id="name" placeholder="eg:John" class="personal" required></label>
+    <label id="email-label">Email<input type="email" id="email" placeholder="eg:example123@yahoo.com" class="personal" required></label>
+    <label id="number-label">Phone Number<input type="tel" placeholder="eg:9876543210" class="personal" required></label>
+    <label for="number">Age<input type="number" id="number" max="40" min="18" placeholder="Your Age Here" class="personal"></label>
+    </fieldset>
+    <fieldset>
+      <h3>Professional Details</h3>
+      <label for="dropdown">What best describes your professional status?<select id="dropdown">
+        <option value="">Choose One</option>
+        <option value="1">Full-time</option>
+        <option value="2">Part-time</option>
+        <option value="3">Unemployed</option>
+        <option value="4">Student</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <h3>Referral Details</h3>
+      <label for="study"><a class="ques1">What aspects did you find the most effective about this training?</a><br><input type="checkbox" id="study" class="inline" value ="option1">Study Materials</label>
+      <label for="project"><input type="checkbox" id="project" class="inline" value ="option2">Projects</label>
+      <label for="practical"><input type="checkbox" id="practical" class="inline" value ="option3">Practical Sessions</label>
+      <label for="mentors"><input type="checkbox" id="mentors" class="inline" value ="option4">Instructors</label>
+      <label for="definite"><a class="ques2">Would you recommend this training to your friends/colleagues?</a><br><input type="radio" id="definite" name="refer" class="inline" value="1">Definitely</label>
+      <label for="maybe"><input type="radio" id="maybe" name="refer" class="inline" value="2">Maybe</label>
+      <label for="not-sure"><input type="radio" id="not-sure" name="refer" class="inline" value="3">Not Sure</label>
+      <label for="feedback">Please provide your personal feedback here:<textarea id="feedback" rows="3" cols="30" placeholder="Your feedback here..."></textarea></label>
+         </fieldset>
+         <input type="submit" value="submit" id="submit"> 
+      
+  
+  
+  
+  
+  </form>
+</body>
+</html>
